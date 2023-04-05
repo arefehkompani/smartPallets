@@ -1,0 +1,29 @@
+{
+  "name": "nodejs-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "author": "Arefeh Kompani",
+  "license": "ISC",
+  "dependencies": {
+    "app-module-path": "^2.2.0",
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-ws": "^5.0.2",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "jalali-moment": "^3.3.11",
+    "moment-timezone": "^0.5.41",
+    "mongoose": "^6.9.1",
+    "nodemon": "^2.0.20",
+    "path": "^0.12.7",
+    "websocket": "^1.0.34",
+    "ws": "^8.11.0"
+  }
+}
