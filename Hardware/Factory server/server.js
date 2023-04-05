@@ -106,7 +106,7 @@ wsServer.on('request', function(request) {
             // })
 
             console.log('Received Message: ' + message.utf8Data);
-            connection.sendUTF("Hello from factory server");
+            connection.sendUTF("Factory server: I got data.");
         }
         else if (message.type === 'binary') {
             console.log('Received Binary Message of ' + message.binaryData.length + ' bytes');
