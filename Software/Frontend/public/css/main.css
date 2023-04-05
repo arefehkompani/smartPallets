@@ -1,0 +1,432 @@
+@font-face {
+    font-family: iransans;
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/IRANSans.eot");
+    src: url("../fonts/IRANSans.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/IRANSans.woff2") format("woff2"),
+        url("../fonts/IRANSans.woff") format("woff"),
+        url("../fonts/IRANSans.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'BYekan';
+    src: url('../fonts/BYekan.eot');
+    src: url('../fonts/BYekan.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BYekan.woff') format('woff'),
+        url('../fonts/BYekan.ttf') format('truetype');
+}
+
+html,
+body {
+    background-color: #f1f4fb;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    font-family: iransans !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: iransans;
+    color: #263871;
+}
+
+a {
+    text-decoration: none !important;
+    color: #263871 !important;
+}
+
+a:hover {
+    color: #3366ff !important;
+}
+
+/******************************public*********************************/
+
+.number-font {
+    font-family: 'BYekan' !important;
+}
+
+.ltr {
+    direction: ltr !important;
+}
+
+.rtl {
+    direction: rtl !important;
+}
+
+/******************************menu*********************************/
+
+.menu {
+    position: fixed;
+    background-color: #17263a;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 270px;
+    transition: right .2s ease, width .2s ease;
+    z-index: 1000;
+    padding-bottom: 80px;
+
+}
+
+.list-menu {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.content-all {
+    margin-right: 270px;
+    transition: margin-right .2s ease;
+}
+
+@media only screen and (max-width: 959px) {
+    .content-all {
+      margin-right: 0px;
+    }
+}
+
+.content {
+    padding: 40px 25px;
+}
+
+.logo {
+    border-bottom: 1px solid hsla(0, 0%, 100%, .1);
+}
+
+.logo img {
+    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 50%;
+    padding: 15px 30px;
+}
+
+.minimize-logo {
+    padding: 15px 0px !important;
+}
+
+.side-menu {
+    padding: 0;
+    list-style: none;
+}
+
+.side-menu li .main-menu {
+    align-items: center;
+    margin: 10px 10px;
+    padding: 12px 15px;
+    border-radius: 7px;
+    transition: border-right-color .3s ease, background-color .3s ease;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #e8eeff !important;
+}
+
+.side-menu li:hover .main-menu {
+    background-color: #3366ff;
+}
+
+
+.side-menu li .main-menu:hover {
+    color: none !important;
+}
+
+.side-menu li .main-menu:focus {
+    color: none !important;
+}
+
+.side-menu li .main-menu::before {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2214%22%20height%3D%2214%22%20viewBox%3D%220%200%2014%2014%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-width%3D%221.1%22%20points%3D%2210%201%204%207%2010%2013%22%20%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.side-menu .uk-open .main-menu::before {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2213%22%20height%3D%2213%22%20viewBox%3D%220%200%2013%2013%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23fff%22%20width%3D%2213%22%20height%3D%221%22%20x%3D%220%22%20y%3D%226%22%20%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.side-menu li .main-menu i {
+    margin-left: 3px;
+}
+
+.side-menu li .main-menu.active {
+    background-color: #3366ff;
+}
+
+side-menu li .side-menu.uk-accordion-content {
+    color: #fff !important;
+}
+
+.sub-menu {
+    color: #e8eeff !important;
+    padding: 0px 50px;
+}
+
+.sub-menu li a {
+    color: #e8eeff !important;
+    font-size: 14px;
+    padding: 3px 0px;
+    text-decoration: none;
+}
+
+.user-pic {
+    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 15px 5px;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center !important;
+    border-bottom: 1px solid hsla(0, 0%, 100%, .1);
+}
+
+.user-img img {
+    color: #aab3cc;
+    text-align: center !important;
+    border: 3px solid #2c4669;
+    margin-bottom: 20px !important;
+    border-radius: 50%;
+    font-size: 2rem;
+    height: 50%;
+    line-height: 5rem;
+    width: 50%;
+}
+
+.notif-bar {
+    background-color: white;
+    color: #17263a;
+    padding: 15px 0px;
+}
+
+.notif-bar .uk-offcanvas-close {
+    color: #557ffd;
+    background-color: #dee5f7;
+    border-radius: 8px;
+    padding: 8px;
+    position: static !important;
+    margin-left: 12px;
+}
+
+.notif-bar .uk-offcanvas-close:hover {
+    color: #163aa5;
+}
+
+.notif-bar h3 {
+    color: #263871;
+    margin-right: 12px;
+}
+
+.notif-bar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.notif-bar ul li {
+    border-top: 2px solid #ebedfa;
+    padding: 18px 12px;
+}
+
+.notif-bar ul li:hover {
+    background-color: #f0f3fa;
+}
+
+.notif-bar ul li:last-child {
+    border-bottom: 2px solid #ebedfa;
+}
+
+.hide-minus-menu::before {
+    content: none !important;
+}
+
+.hide-minus-menu {
+    text-align: center;
+}
+
+.side-menu-alone::before {
+    content: none !important;
+}
+/******************************header*********************************/
+
+.header {
+    background: #fff;
+    border-bottom: 1px solid #ebedfa;
+    box-shadow: 0 6px 18px rgba(196, 205, 224, .1);
+    padding: 15px 20px;
+    transition: padding-right .2s ease;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header-menu {
+    float: right;
+    background: #f1f4fb;
+    border-radius: 8px;
+    height: 30px;
+    justify-content: center;
+    line-height: 2;
+    margin: 0px 8px;
+    padding: 8px;
+    position: relative;
+    text-align: center;
+    width: 30px;
+}
+
+.header-menu a {
+    text-decoration: none;
+    color: #545b92;
+
+}
+
+.bg-dot {
+    background: #f72d66;
+    color: #fff;
+    border-radius: 100%;
+    display: block !important;
+    font-size: 12px;
+    height: 11px;
+    line-height: 1;
+    padding: 3px 4px 4px 5px!important;
+    position: absolute;
+    right: 3px;
+    top: 2px;
+    width: 11px;
+    font-family: 'BYekan';
+}
+
+/******************************content*********************************/
+
+.content h3 {
+    color: #263871;
+}
+
+.tab-content {
+    margin: 0 !important;
+}
+
+.tab-content li a {
+    background: #dee5f7 !important;
+    padding: 15px 10px !important;
+    border-radius: 13px 13px 0 0 ;
+}
+
+.tab-content .uk-active a {
+    background: #ffffff !important;
+}
+
+
+/******************************uikit*********************************/
+
+.uk-button {
+    border-radius: 7px !important;
+}
+
+.uk-button-primary {
+    background-color: #3366ff !important;
+    color: #fff !important;
+}
+
+.uk-button-primary:hover {
+    background-color: #1c54fd !important;
+    color: #fff !important;
+}
+
+.uk-card-body {
+    border-radius: 7px !important;
+}
+
+.uk-input, .uk-select, .uk-textarea {
+    border-radius: 7px !important;
+    border-color: #d3dfea !important;
+    margin-top: 4px !important;
+    font-size: 15px !important;
+    line-height: 23px;
+}
+
+.uk-select option {
+    font-family: iransans !important;
+}
+
+.uk-form-label {
+    color: #263871 !important;
+}
+
+.uk-table-hover tbody tr:hover {
+    background-color: #dce5fc !important;
+}
+
+.uk-notification-message {
+    border-radius: 10px !important;
+    font-size: 18px !important;
+}
+
+.uk-notification-message-success {
+    background-color: #519259 !important;
+    color: white !important;
+}
+
+.uk-notification-message-danger {
+    background-color: #FF0000 !important;
+    color: white !important;
+}
+
+.uk-notification-message-warning {
+    background-color: #EF5B0C !important;
+    color: white !important;
+}
+
+.uk-radio {
+    margin: 7px;
+    text-align: right;
+}
+
+
+/******************************Table*********************************/
+
+.custom-table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.custom-table th {
+    width: 100px;
+    text-align: center;
+}
+
+.custom-table td {
+    text-align: center;
+}
+
+.linearicon-button {
+    font-size: 18px;
+    padding-top: 5px;
+}
+
+/******************************card*********************************/
+
+.card-icon {
+    float: left;
+    position: absolute;
+    background: #f1f4fb;
+    border-radius: 8px;
+    height: 35px;
+    justify-content: center;
+    line-height: 3;
+    margin: 7px 8px 0px 8px;
+    padding: 8px;
+    text-align: center;
+    width: 35px;
+    top: 18px;
+    left: 6px;
+}
+
+.card-icon i {
+    font-size: 25px !important;
+}
+
